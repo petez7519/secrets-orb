@@ -1,0 +1,10 @@
+version: 2.1
+
+orbs:
+  secret-orb: my-namespace/my-orb@1.0.0
+
+workflows:
+  version: 2
+  use-secret-workflow:
+    jobs:
+      - secret-orb/example-job
